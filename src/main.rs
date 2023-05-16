@@ -99,7 +99,7 @@ async fn main() {
                 )
                 .await?;
 
-                let file_path = Path::new("data/countries.json");
+                let file_path = Path::new("data/cities.json");
                 let file = File::open(file_path)?;
                 let reader = BufReader::new(file);
                 let cities: Vec<City> = serde_json::from_reader(reader)?;
