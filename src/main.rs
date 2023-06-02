@@ -44,6 +44,7 @@ async fn main() {
             commands::ping::ping(),
             commands::weather::weather(),
             commands::info::info(),
+            commands::dropbox::dropbox(),
         ],
         prefix_options: poise::PrefixFrameworkOptions {
             ..Default::default()
