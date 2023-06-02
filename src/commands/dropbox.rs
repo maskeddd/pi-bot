@@ -29,9 +29,9 @@ pub async fn upload(
         .output()?;
 
     if output.status.success() {
-        ctx.say("Uploaded successfully").await?;
+        ctx.say("File uploaded successfully").await?;
     } else {
-        ctx.say("Failed to upload").await?;
+        ctx.say("Failed to upload file").await?;
     }
 
     path.close()?;
